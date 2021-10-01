@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Print if the number is negative positive or 0
+ * main - Print alphabet in lowercase
  * Return: 0
  */
 int main(void)
