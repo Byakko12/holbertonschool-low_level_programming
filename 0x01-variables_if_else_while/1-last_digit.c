@@ -5,10 +5,8 @@
 /**
  * main - generate a random number and take the last digit and compares if is
  * greatest, less or equal to 0
- * @n: random number
- * @ld: last digit of number stored in n
  * Return: 0
- */ 
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
