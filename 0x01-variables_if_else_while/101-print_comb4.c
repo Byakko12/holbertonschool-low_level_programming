@@ -5,20 +5,20 @@
  */
 int main(void)
 {
-	int izquierda, medio, derecha, size = '9';
+	int left, middle, right, size = '9';
 
-	for (izquierda = '0'; izquierda <= size; izquierda++)
+	for (left = '0'; left <= size; left++)
 	{
-		for (medio = '0'; medio <= size; medio++)
+		for (middle = '0'; middle <= size; middle++)
 		{
-			for (derecha = '0'; derecha <= size; derecha++)
+			for (right = '0'; right <= size; right++)
 			{
-				if ((izquierda < medio) & (medio < derecha) & (derecha <= size))
+				if ((left < middle) & (middle < right) & (right <= size))
 				{
-					putchar(izquierda);
-					putchar(medio);
-					putchar(derecha);
-					if ((izquierda < '7') | (medio < '8') | (derecha < '9'))
+					putchar(left);
+					putchar(middle);
+					putchar(right);
+					if ((left < '7') | (middle < '8') | (right < '9'))
 					{
 						putchar(',');
 						putchar(' ');
