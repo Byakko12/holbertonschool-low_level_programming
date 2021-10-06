@@ -14,7 +14,6 @@ int main(void)
 		{
 			printf(", ");
 		}
-		
 		sum = (n1 + n2);
 		printf("%li", sum);
 		n1 = n2;
