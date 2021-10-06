@@ -7,7 +7,7 @@ int main(void)
 {
 	int i, size = 50, sum = 0, n1 = 1, n2 = 1;
 
-	printf("%d, %d, ", n1, n2);
+	printf("%d, ", n2);
 	for (i = 1; i <= size; i++)
 	{
 		sum = (n1 + n2);
