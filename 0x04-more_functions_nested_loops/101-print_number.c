@@ -1,30 +1,36 @@
 #include "main.h"
 /**
- * print_number - print number with _putchar
- * @n: value
+ * print_number - print numbers with _putchar
+ * @n: numbers
  * Return: not return
  */
 void print_number(int n)
 {
+	int last_digit, reversedn;
+
 	if (n < 0)
 	{
-		n = -n;
 		_putchar('-');
+		last_digit = ('0' - (n % 10));
+		n /= -10;
 	}
-	if (n >= 10 && n <= 99)
+	else
 	{
-		_putchar((n / 10) + '0');
+		last_digit = ((n % 10) + '0');
+		n /= 10;
 	}
-	else if (n >= 100 && n <= 999)
+	reversedn = 0;
+	for (; n > 0;)
 	{
-		_putchar((n / 100) + '0');
-		_putchar(((n / 100) / 10) + '0');
+		reversedn = ((reversedn * 10) + (n % 10));
+		n /= 10;
 	}
-	else if (n >= 1000 && n <= 9999)
+	for (; reversedn > 0;)
 	{
-		_putchar((n / 1000) + '0');
-		_putchar(((n / 100) % 10) + '0');
-		_putchar((n / 10) % 10 + '0');
+		int d = ((reversedn % 10) + '0');
+
+		_putchar(d);
+		reversedn /= 10;
 	}
-	_putchar((n % 10) + '0');
+	_putchar(last_digit);
 }
