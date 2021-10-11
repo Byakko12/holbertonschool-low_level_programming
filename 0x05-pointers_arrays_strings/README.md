@@ -5,3 +5,7 @@
 
 > * Prototype: void reset_to_98(int *n);
 
+**1-swap.c**
+* function that swaps the values of two integers.
+
+> * Prototype: void swap_int(int *a, int *b);
