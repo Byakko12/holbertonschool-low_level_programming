@@ -19,5 +19,11 @@ src does not need to be null-terminated if it contains n or more bytes
 **2-strncpy.c**
 * function that copies a string.
 
-Prototype: char *_strncpy(char *dest, char *src, int n);
-Your function should work exactly like strncpy
+> * Prototype: char *_strncpy(char *dest, char *src, int n);
+> * Your function should work exactly like strncpy
+
+**3-strcmp.c**
+* function that compares two strings.
+
+> * Prototype: int _strcmp(char *s1, char *s2);
+> * Your function should work exactly like strcmp
