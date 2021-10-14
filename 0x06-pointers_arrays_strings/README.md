@@ -38,3 +38,9 @@ src does not need to be null-terminated if it contains n or more bytes
 * function that changes all lowercase letters of a string to uppercase.
 
 > * Prototype: char *string_toupper(char *);
+
+**6-cap_string.c**
+* function that capitalizes all words of a string.
+
+> * Prototype: char *cap_string(char *);
+> * Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and }
