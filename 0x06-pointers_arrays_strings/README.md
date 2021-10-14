@@ -58,3 +58,21 @@ src does not need to be null-terminated if it contains n or more bytes
 > * You can only use two loops in your code
 > * You are not allowed to use switch
 > * You are not allowed to use any ternary operation
+
+**100-rot13.c**
+*  function that encodes a string using rot13.
+
+> * Prototype: char *rot13(char *);
+> * You can only use if statement once in your code
+> * You can only use two loops in your code
+> * You are not allowed to use switch
+> * You are not allowed to use any ternary operation
+
+**101-print_number.c**
+* function that prints an integer.
+
+> * Prototype: void print_number(int n);
+> * You can only use _putchar function to print
+> * You are not allowed to use long
+> * You are not allowed to use arrays or pointers
+> * You are not allowed to hard-code special values
