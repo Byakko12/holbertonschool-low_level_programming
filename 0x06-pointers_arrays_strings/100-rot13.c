@@ -7,8 +7,8 @@
 char *rot13(char *str)
 {
 	int i, j;
-	char temp[] = "ABCDEFGHIJKLMabcdefghijklm";
-	char temp2[] = "NOPQRSTUVWXYZnopqrstuvwxyz";
+	char temp[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char temp2[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -17,10 +17,7 @@ char *rot13(char *str)
 			if (str[i] == temp[j])
 			{
 				str[i] = temp2[j];
-			}
-			else if (str[i] == temp2[j])
-			{
-				str[i] = temp[j];
+				break;
 			}
 		}
 	}
