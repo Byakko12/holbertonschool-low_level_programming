@@ -1,8 +1,5 @@
 #include <stdio.h>
-/**
- * main - print 98 setting in a[2]
- * Return: not return
- */
+
 int main(void)
 {
 	int n;
