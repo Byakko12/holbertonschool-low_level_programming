@@ -17,13 +17,7 @@ char *_strpbrk(char *s, char *accept)
 			{
 				return (s);
 			}
-
 		}
-		if (*s == '\0')
-		{
-			return (NULL);
-		}
-		s++;
 	}
-	return (s);
+	return (NULL);
 }
