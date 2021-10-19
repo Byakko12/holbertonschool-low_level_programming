@@ -9,6 +9,7 @@
 char *_strstr(char *haystack, char *needle)
 {
 	char *p = needle;
+	char *p2;
 
 	if (*needle == '\0')
 	{
@@ -16,14 +17,20 @@ char *_strstr(char *haystack, char *needle)
 	}
 	for (; *haystack != '\0'; haystack++)
 	{
-		for (needle = p; *needle != '\0'; needle++)
+		if (*haystack != *p)
 		{
-			if (*needle == *haystack)
+			continue;
+		}
+		p2 = haystack;
+		for (needle = p; 1; needle++)
+		{
+			if (*needle == 0)
 			{
+				return (haystack);
 			}
-			else
+			if (*p2++ != *needle)
 			{
-				return (needle);
+				break;
 			}
 		}
 	}
