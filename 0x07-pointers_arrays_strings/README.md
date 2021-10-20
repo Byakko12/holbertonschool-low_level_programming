@@ -51,3 +51,8 @@
 > * Prototype: void print_diagsums(int *a, int size);
 > * Format: see example
 > * You are allowed to use the standard library
+
+**100-set_string.c**
+* function that sets the value of a pointer to a char.
+
+> * Prototype: void set_string(char **s, char *to);
