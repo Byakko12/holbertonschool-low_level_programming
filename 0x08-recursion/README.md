@@ -9,3 +9,8 @@
 * function that prints a string in reverse.
 
 > * Prototype: void _print_rev_recursion(char *s);
+
+**2-strlen_recursion.c**
+* function that returns the length of a string.
+
+> * Prototype: int _strlen_recursion(char *s);
