@@ -27,3 +27,11 @@
 
 > * Prototype: int _pow_recursion(int x, int y);
 > * If y is lower than 0, the function should return -1
+
+**5-sqrt_recursion.c**
+* function that returns the natural square root of a number.
+
+> * Prototype: int _sqrt_recursion(int n);
+> * If n does not have a natural square root, the function should return -1
+
+
