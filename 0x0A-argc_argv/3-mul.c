@@ -9,9 +9,9 @@ int main(int argc, char *argv[])
 {
 	int i = 1, multiplies = 1;
 
-	if (i > 2)
+	if (argc <= 1)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 	for (; i < argc; i++)
