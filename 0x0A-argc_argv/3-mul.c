@@ -14,6 +14,11 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	if (argc > 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
 	for (; i < argc; i++)
 	{
 		multiplies *= atoi(argv[i]);
