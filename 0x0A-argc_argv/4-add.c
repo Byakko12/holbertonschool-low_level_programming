@@ -7,8 +7,8 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1, add = 0;
-
+	int i = 1, add = 0, number = 0;
+	
 	if (argc == 0)
 	{
 		printf("%d\n", 0);
@@ -16,9 +16,15 @@ int main(int argc, char *argv[])
 	}
 	for (; i < argc; i++)
 	{
-		if (*argv[i] <= '9' && *argv[i] >= '0')
+		if ((*argv[i] <= '9' && *argv[i] >= '0') || *argv[i] == '-')
 		{
-			add += atoi(argv[i]);
+			number = atoi(argv[i]);
+			if (number < 0)
+			{
+				number = 0;
+				i++;
+			}
+			add += number;
 		}
 		else
 		{
