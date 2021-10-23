@@ -1,4 +1,22 @@
 #include "main.h"
+
+int isdigitplus (char *string)
+{
+	int a = 0;
+
+	for (a = 0; string[a] != '\0'; a++)
+	{
+		if (string[0] == '-')
+		{
+			a += 1;
+		}
+		if (!isdigit(string[a]))
+		{
+			return (0);
+		}
+	}
+	return (1);
+}
 /**
  * main - adds positive numbers
  * @argc: argument counter
@@ -7,31 +25,21 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1, add = 0, number;
+	int i = 1, add = 0;
 
-	if (argv[i] == 0)
+	if (argc > 1)
 	{
-		printf("%d\n", 0);
-		return (0);
-	}
-	for (; i < argc; i++)
-	{
-		if ((*argv[i] <= '9' && *argv[i] >= '0') || *argv[i] == '-')
+		for (; i < argc; i++)
 		{
-			number = atoi(argv[i]);
-			if (number >= 0)
+			if (isdigitplus(argv[i]) != 0)
 			{
-			add += number;
+				add += atoi(argv[i]);
 			}
 			else
 			{
-				continue;
+				printf("Error\n");
+				return (1);
 			}
-		}
-		else
-		{
-			printf("Error\n");
-			return (1);
 		}
 	}
 	printf("%d\n", add);
