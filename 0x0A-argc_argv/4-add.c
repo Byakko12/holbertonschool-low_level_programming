@@ -1,6 +1,10 @@
 #include "main.h"
-
-int isdigitplus (char *string)
+/**
+ * isdigitplus - return 1 if string is a number else 0
+ * @string: string to be evaluated
+ * Return: success or failure
+ */
+int isdigitplus(char *string)
 {
 	int a = 0;
 
