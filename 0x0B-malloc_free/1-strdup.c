@@ -9,9 +9,12 @@ char *_strdup(char *str)
 {
 	char *buffer;
 	int i, lenght = _strlen(str);
-
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 	buffer = malloc(sizeof(char) * lenght + 1);
-	if (buffer == NULL || str == NULL)
+	if (buffer == NULL)
 	{
 		return (NULL);
 	}
