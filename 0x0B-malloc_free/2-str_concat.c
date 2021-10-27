@@ -1,12 +1,20 @@
 #include "main.h"
-
+/**
+ * *str_concat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ * Return: returned pointer should point to a newly allocated space in
+ *  memory which contains the contents of s1, followed by the contents of s2,
+ *  and null terminatedreturn NULL on failure
+ */
 char *str_concat(char *s1, char *s2)
 {
 	char *buffer;
 	int i = 0, j = 0, length1, length2;
+
 	if (s1 == NULL && s2 == NULL)
 	{
-		return (NULL);
+		return ("");
 	}
 	if (s1 == NULL)
 	{
