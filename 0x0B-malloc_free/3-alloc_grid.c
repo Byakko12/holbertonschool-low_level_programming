@@ -8,27 +8,26 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i, **buffer;
+	int i, j, **buffer;
 
 	if (width <= 0 || height <= 0)
 	{
 		return (NULL);
 	}
-	buffer = malloc(height * sizeof(int *));
+	buffer = (int **)malloc(height * sizeof(int *));
 	if (buffer == NULL)
 	{
 		return (NULL);
 	}
 	for (i = 0; i < height; i++)
 	{
-		buffer[i] = malloc(width * sizeof(int *));
+		buffer[i] = (int *)malloc(width * sizeof(int *));
 		if (buffer[i] == NULL)
 		{
-			for (i = 0; i < height; i++)
+			for (j = 0; j < height; j++)
 			{
-				free(buffer[i]);
+				free(buffer[j]);
 			}
-			free(buffer);
 			return (NULL);
 		}
 	}
