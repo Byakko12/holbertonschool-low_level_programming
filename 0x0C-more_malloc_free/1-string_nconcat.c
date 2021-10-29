@@ -21,8 +21,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = firstLenght + n;
 	}
-	buffer = malloc(sizeof(char) * n + 1);
+	buffer =(char *) malloc(sizeof(char) * n + 1);
 	if (buffer == NULL)
+	{
+		return (NULL);
+	}
+	if (s1 == 1 && s2 == 1)
 	{
 		return (NULL);
 	}
@@ -34,6 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		buffer[i] = s2[j];
 	}
+	buffer[i] = '\0';
 	return (buffer);
 }
 
