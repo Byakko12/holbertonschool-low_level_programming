@@ -7,21 +7,22 @@
  */
 int *array_range(int min, int max)
 {
-	int i = 0, *buffer;
+	int i = 0, *buffer, nElements = 0, nSize = 0;
 
 	if (min > max)
 	{
 		return (NULL);
 	}
-
-	buffer = malloc(sizeof(int) * max + 1);
+	nSize = max - min + 1;
+	buffer = malloc(sizeof(int) * nSize);
 	if (buffer == NULL)
 	{
 		return (NULL);
 	}
-	while (min <= max)
+	nElements = min;
+	while (nElements <= max)
 	{
-		buffer[i] = min++;
+		buffer[i] = nElements++;
 		i++;
 	}
 	return (buffer);
