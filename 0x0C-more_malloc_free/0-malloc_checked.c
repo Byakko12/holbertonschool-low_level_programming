@@ -8,7 +8,7 @@ void *malloc_checked(unsigned int b)
 {
 	unsigned int *buffer;
 
-	buffer = malloc(sizeof(unsigned int) * b);
+	buffer = (void *)malloc(b);
 	if (buffer == NULL)
 	{
 		exit(98);
