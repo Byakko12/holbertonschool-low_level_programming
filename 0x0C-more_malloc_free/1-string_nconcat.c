@@ -10,13 +10,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j, firstLenght, secondLenght;
 	char *buffer;
-
-	firstLenght = _strlen(s1);
-	secondLenght = _strlen(s2);
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	firstLenght = _strlen(s1);
+	secondLenght = _strlen(s2);
 	if (n >= secondLenght)
 		n = firstLenght + secondLenght;
 	else
