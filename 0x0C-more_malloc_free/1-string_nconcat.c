@@ -13,23 +13,17 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	firstLenght = _strlen(s1);
 	secondLenght = _strlen(s2);
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 	if (n >= secondLenght)
-	{
 		n = firstLenght + secondLenght;
-	}
 	else
-	{
 		n = firstLenght + n;
-	}
 	buffer = (char *)malloc(sizeof(char) * n + 1);
 	if (buffer == NULL)
-	{
 		return (NULL);
-	}
-	if (*s1 == 1 && *s2 == 1)
-	{
-		return (NULL);
-	}
 	for (i = 0; i < firstLenght; i++)
 	{
 		buffer[i] = s1[i];
