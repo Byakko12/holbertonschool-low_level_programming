@@ -21,12 +21,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = firstLenght + n;
 	}
-	buffer =(char *) malloc(sizeof(char) * n + 1);
+	buffer = (char *)malloc(sizeof(char) * n + 1);
 	if (buffer == NULL)
 	{
 		return (NULL);
 	}
-	if (s1 == 1 && s2 == 1)
+	if (*s1 == 1 && *s2 == 1)
 	{
 		return (NULL);
 	}
