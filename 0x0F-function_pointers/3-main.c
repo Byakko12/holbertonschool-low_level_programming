@@ -16,11 +16,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (result == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
+
 	if ((*op != '+' && *op != '-' && *op != '*' && *op != '/' &&
 		 *op != '%') ||
 		(lenght > 1))
@@ -29,6 +25,11 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	result = get_op_func(argv[2])(a, b);
+	if (result == NULL)
+	{
+		printf("Error\n");
+		exit(99);
+	}
 	printf("%d\n", result);
 	return (0);
 }
