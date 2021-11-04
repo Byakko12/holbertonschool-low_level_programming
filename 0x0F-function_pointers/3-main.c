@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (argv[1] == NULL || argv[3] == NULL)
+	if (result == NULL)
 	{
 		printf("Error\n");
 		exit(99);
