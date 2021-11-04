@@ -7,7 +7,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int result = 0, a = atoi(argv[1]), b = atoi(argv[3]);
+	int result = 0, a, b;
 	char *op = argv[2];
 	int lenght = strlen(op);
 
@@ -16,6 +16,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+	a = atoi(argv[1]), b = atoi(argv[3]);
 	if (argv[1] == NULL || argv[3] == NULL)
 	{
 		printf("Error\n");
