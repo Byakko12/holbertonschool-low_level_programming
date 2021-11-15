@@ -24,3 +24,8 @@
 
 > * Prototype: listint_t *add_nodeint_end(listint_t **head, const int n);
 > * Return: the address of the new element, or NULL if it failed
+
+**4-free_listint.c**
+* function that frees a listint_t list.
+
+> * Prototype: void free_listint(listint_t *head);
