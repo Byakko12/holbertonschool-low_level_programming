@@ -29,3 +29,9 @@
 * function that frees a listint_t list.
 
 > * Prototype: void free_listint(listint_t *head);
+
+**5-free_listint2.c**
+* function that frees a listint_t list.
+
+> * Prototype: void free_listint2(listint_t **head);
+> * The function sets the head to NULL
