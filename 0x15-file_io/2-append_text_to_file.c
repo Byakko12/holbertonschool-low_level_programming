@@ -7,7 +7,6 @@
  **/
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int i = 0;
 	int fd_open = 0;
 	ssize_t fd_write = 0;
 
@@ -22,10 +21,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	}
 	if (text_content != NULL)
 	{
-		for (i = 0; text_content[i] != '\0'; i++)
-		{
-		}
-		fd_write = write(fd_open, text_content, i);
+		fd_write = write(fd_open, text_content, strlen(text_content));
 		if (fd_write == -1)
 		{
 			return (-1);
