@@ -38,7 +38,7 @@ hash_node_t *new_node(const char *key, const char *value)
  * @key: name of value
  * @ht: hash table you want to add or update the key/value to
  *
- * Return: 1 if it succeeded, 0 otherwise
+ * Return: 1 if it succeeded, 0 otherwiseI
  */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
