@@ -1,0 +1,9 @@
+# rule build your executable
+all:
+	$(CC) $(SRC) -o school
+
+# the compiler to be used
+CC = gcc
+
+# the .c files
+SRC = school.c main.c
