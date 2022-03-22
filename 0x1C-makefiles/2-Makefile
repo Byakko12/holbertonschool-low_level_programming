@@ -1,0 +1,15 @@
+# rule build your executable
+all:	$(OBJ)	
+	$(CC) $(OBJ) -o $(NAME)
+
+# the compiler to be used
+CC = gcc
+
+# the .c files
+SRC = school.c main.c
+
+# .o files
+OBJ = $(SRC:%.c=%.o)
+
+# name of executable
+NAME = school
